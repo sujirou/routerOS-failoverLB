@@ -1,4 +1,4 @@
-# RouterOS Dual WAN, Hotspot & Load Balancer Configuration
+# RouterOS Dual WAN, Hotspot, CAKE QoS, Failover & Load Balancer Configuration
 
 ## Why This Exists
 
