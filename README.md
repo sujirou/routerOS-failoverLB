@@ -28,6 +28,7 @@ All of this works together as one cohesive system, not scattered pieces you have
 Before you dive in, make sure you've got:
 
 - **RouterOS v7** (this config uses PCC and CAKE features specific to v7+)
+- **MIKHMON** RouterOS 7+ Compatible Hotspot Management System (old MIKHMONs don't play well with script scheduling)
 - **Two WAN interfaces** ready to go (this example uses ether1 and ether2)
 - **Basic familiarity** with RouterOS terminal or WebFig interface
 - **A backup** of your current config (seriously, always backup first)
