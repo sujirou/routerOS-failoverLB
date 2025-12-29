@@ -26,7 +26,7 @@ add address-pool=pool-hotspot disabled=no interface=vlan201-hotspot name=hotspot
 add cake-diffserv=besteffort cake-nat=yes kind=cake name=cake-rx
 add cake-diffserv=besteffort cake-nat=yes kind=cake name=cake-tx
 /queue simple
-add max-limit=50M/50M name=Global-CAKE queue=cake-tx/cake-rx target=10.10.201.0/24,10.10.202.0/24 total-queue=default
+add max-limit=50M/50M name=Global-CAKE queue=cake-tx/cake-rx target=10.10.201.0/24,10.10.202.0/24,10.10.100.0/24 total-queue=default
 /ip hotspot user profile
 add address-pool=pool-hotspot name=1min-test on-login=":put (\",remc,0,1m,0,,Enable,\"); {:local comment [ /ip hotspot user get [/ip hotspot user find where name=\"\$user\"] comment]\
     ; :local ucode [:pic \$comment 0 2]; :if (\$ucode = \"vc\" or \$ucode = \"up\" or \$comment = \"\") do={ :local date [ /system clock get date ];:local year [ :pick \$date 0 4 ];:\
