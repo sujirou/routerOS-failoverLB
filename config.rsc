@@ -10,7 +10,7 @@ add interface=bridge-trunk name=vlan202-pppoe vlan-id=202
 add name=WAN
 add name=LAN
 /ip hotspot profile
-add dns-name=jnt2.local hotspot-address=10.10.201.1 html-directory=hotspot name=hsprof1
+add dns-name=hotspot.local hotspot-address=10.10.201.1 html-directory=hotspot name=hsprof1
 /ip hotspot user profile
 set [ find default=yes ] on-login=":put (\",,0,,,noexp,Disable,\")" parent-queue=none
 /ip pool
