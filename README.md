@@ -43,7 +43,7 @@ This config assumes the following network layout. You'll need to adapt it to you
 | ether1 | WAN - PLDT | 192.168.160.0/24 | Primary WAN |
 | ether2 | WAN - Starlink | 192.168.170.0/24 | Failover WAN |
 | PPPoE Users | LAN - Hotspot/Users | 10.10.202.0/24 | End users connect here |
-| Hotspot | LAN - Hotspot Portal | 10.10.202.0/24 | Guest access with auth |
+| Hotspot | LAN - Hotspot Portal | 10.10.201.0/24 | Guest access with auth |
 | Management | LAN - Trunk/Admin | 10.10.100.0/24 | Router admin & critical services |
 
 ---
