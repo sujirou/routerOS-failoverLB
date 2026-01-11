@@ -136,8 +136,8 @@ add action=mark-connection chain=output dst-address-list=!local_subnets new-conn
 add action=mark-routing chain=output connection-mark=WAN1_conn new-routing-mark=to_WAN1 passthrough=no
 add action=mark-routing chain=output connection-mark=WAN2_conn new-routing-mark=to_WAN2 passthrough=no
 /ip firewall nat
-add action=redirect chain=dstnat dst-port=53 in-interface-list=LAN protocol=udp to-ports=53
-add action=redirect chain=dstnat dst-port=53 in-interface-list=LAN protocol=tcp to-ports=53
+add action=redirect chain=dstnat comment="Force LAN DNS to Router" dst-port=53 in-interface-list=LAN protocol=udp to-ports=53
+add action=redirect chain=dstnat comment="Force LAN DNS to Router" dst-port=53 in-interface-list=LAN protocol=tcp to-ports=53
 add action=passthrough chain=unused-hs-chain comment="place hotspot rules here" disabled=yes
 add action=masquerade chain=srcnat comment="NAT for Dual WAN" out-interface-list=WAN
 /ip hotspot user
