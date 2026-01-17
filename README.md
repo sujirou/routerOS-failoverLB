@@ -78,4 +78,9 @@ Don't be afraid to dig in and modify. This config is meant to be adapted, learne
 
 If something breaks, doesn't work as expected, or you've got a killer improvement, let me know. If you found this helpful and want to support more open-source networking content, hit up my [Ko-Fi](https://ko-fi.com/sujirou).
 
+refs: \
+[Failover (WAN Backup)](https://help.mikrotik.com/docs/spaces/ROS/pages/26476608/Failover+WAN+Backup) \
+[Per connection classifier](https://help.mikrotik.com/docs/spaces/ROS/pages/152600617/Per+connection+classifier) 
+
+
 Happy routing! 🚀
